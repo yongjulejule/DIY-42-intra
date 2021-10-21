@@ -1,0 +1,65 @@
+.upper-nav-bar
+{
+	background: rgb(255, 255, 255);
+	height: 60px;
+}
+
+.upper-nav-bar-left
+{
+	background: rgb(42, 45, 56);
+	position: fixed;
+	width: 80px;
+	height: 60px;
+}
+
+.upper-nav-bar-left-logo
+{
+	width: 42.72px;
+	height: 30px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.upper-nav-bar-search
+{
+	position: absolute;
+	float: left;
+	border: none !important;
+	border-width:0px;
+	border-style: hidden;
+	box-shadow: none;
+	outline: none;
+	margin-top: 20px;
+	margin-left: 120px;
+}
+
+.upper-nav-bar-search-icon
+{
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 30px;
+	left: 100px;
+}
+
+.upper-nav-bar-user-bell
+{
+	
+}
+
+.upper-nav-bar-user-noti
+{
+
+}
+
+.upper-nav-bar-user-name
+{
+	
+}
+
+.upper-nav-bar-user-img
+{
+
+}
