@@ -1,15 +1,27 @@
+@import "reset.css";
+
+body
+{
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .upper-nav-bar
 {
 	background: rgb(255, 255, 255);
+	width:100%;
 	height: 60px;
+	top: 0px;
+	left: 0px;
 }
 
 .upper-nav-bar-left
 {
 	background: rgb(42, 45, 56);
-	position: fixed;
+	position: absolute;
 	width: 80px;
 	height: 60px;
+	top: 0;
+	left: 0;
 }
 
 .upper-nav-bar-left-logo
@@ -24,15 +36,22 @@
 
 .upper-nav-bar-search
 {
+	border: none !important;
 	position: absolute;
 	float: left;
-	border: none !important;
-	border-width:0px;
-	border-style: hidden;
-	box-shadow: none;
-	outline: none;
+	top: 0;
+	left: 0;
 	margin-top: 20px;
 	margin-left: 120px;
+}
+
+.upper-nav-bar-search input[type=search]
+{
+	border: none;
+	border-style: hidden;
+	box-shadow: none;
+	outline-style:none;
+	outline: none;
 }
 
 .upper-nav-bar-search-icon
@@ -40,54 +59,87 @@
 	width: 10px;
 	height: 10px;
 	position: absolute;
-	top: 30px;
-	left: 100px;
+	top: 0;
+	left: 0;
+	margin-top: 22px;
+	margin-left: 100px;
 }
 
 .upper-nav-bar-user-bell
 {
 	position: absolute;
-	float: right;
-	right: 150px;
-	top: 20px;
-	transform: translate(-50%, 30%);
-
+	right: 0;
+	top: 0;
+	margin-right: 150px;
+	margin-top: 15px;
 }
 
 .upper-nav-bar-user-noti
 {
-	position: relative;
-	float: right;
-	top: 10px;
-	right: 145px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-right: 142px;
+	margin-top: 5px;
 }
 
 .upper-nav-bar-user-name
 {
 	position:absolute;
-	float: right;
-	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-size: 1rem;
-	top: 30px;
-	right: 80px;
+	top: 0;
+	right : 0;
+	margin-top: 20px;
+	margin-right: 80px;
 }
 
 .upper-nav-bar-user-img
 {
 	position:absolute;
-	top: 20px;
-	float: right;
-	right: 20px;
+	top: 0;
+	right: 0;
+	margin-top: 10px;
+	margin-right: 20px;
 	border-radius: 50%;
 }
 
 .coalition_bg
 {
 	background-size: auto;
-	background-image:
-		url("asset/gam_cover.jpeg");
-	height: 400px;
+	background-image: url("asset/gam_cover.jpeg");
+	height: 314px;
 	background-position: center;
 	background-size:cover;
+}
 
+.page
+{
+	height: 100%;
+	margin-left: 80px;
+}
+
+.side-bar
+{
+	height: 100%;
+	width : 80px;
+	position: fixed;
+	z-index: 1;
+	top: 60px;
+	left: 0;
+	background-color: rgb(42, 45, 56);
+}
+
+.side-bar li
+{
+	margin-top:40px;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-bottom: 40px;
+	list-style-type: none;
+}
+
+.side-bar img
+{
+	width: 30px;
+	height: 30px;
 }
