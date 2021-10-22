@@ -3,6 +3,7 @@
 body
 {
 	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	background:rgb(250,250,250);
 }
 
 .upper-nav-bar
@@ -116,6 +117,7 @@ body
 {
 	height: 100%;
 	margin-left: 80px;
+	color:rgb(250,250,250);
 }
 
 .side-bar
@@ -142,4 +144,50 @@ body
 {
 	width: 30px;
 	height: 30px;
+}
+
+.user-stat
+{
+	padding-left: 30px;
+	height:60px;
+}
+
+.user-col-name
+{
+	margin-top: 10px;
+	margin-right: 10px;
+	position:absolute;
+	color: #4c83a4;
+	padding-left: 10px;
+	font-size: 16px;
+}
+
+.user-col-info
+{
+	position:absolute;
+	padding-top:23px;
+	padding-left: 7px;
+}
+
+.user-col-info img 
+{
+	transform:translate(0, 15%);
+}
+
+.user-name
+{
+	position: absolute;
+	padding-top: 23px;
+	padding-left: 130px;
+	font-size: 18px;
+	font-weight:600;
+}
+
+.user-title
+{
+	position: absolute;
+	padding-top: 23px;
+	padding-left: 250px;
+	font-size: 15px;
+	font-weight:400;
 }
