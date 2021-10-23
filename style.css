@@ -196,6 +196,7 @@ body
 .user-buttons
 {
 	float: right !important;
+	right:10%;
 	width:132.53px;
 	height:22px;
 	padding: 6px 8px 4px;
@@ -340,35 +341,26 @@ body
 	top: -25px;
 }
 
-.content
+.container
 {
-	font-size:12px;
-	margin-left: 90px;
-	color:rgb(0,0,0);
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, 350px);
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	row-gap: 40px;
+	column-gap: 40px;
+	color:rgb(42, 45, 56);
 }
 
-#box-left
+.item
 {
-	position:relative;
-	width: 50%;
-	height: 100px;
-	left:0;
-	padding-top: 20px;
-	padding-left: 20px;
-	background:rgb(255, 255, 255)
+	background: rgb(255, 255, 255);
+	font-size: 12px;
+	font-weight:bold;
+	padding: 30px;
 }
-
-#box-right
-{
-	position:relative;
-	width: 50%;
-	left:50%;
-	padding-left:20px;
-	background:rgb(255, 255, 0)
-}
-/* .content div[id="box"]
-{
-} */
 
 .content-agenda
 {
@@ -380,7 +372,7 @@ body
 	
 }
 
-.content-graph
+.content-logtime
 {
 
 }
@@ -391,6 +383,16 @@ body
 }
 
 .content-projects
+{
+
+}
+
+.content-skills
+{
+	
+}
+
+.content-achievements
 {
 
 }
