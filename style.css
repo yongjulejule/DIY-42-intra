@@ -281,8 +281,8 @@ body
 .profile-blackhole-box
 {
 	float:right;
-	position: fixed;
-	left: 70%;
+	position: absolute;
+	right: 10%;
 	width: 28%;
 	height: 179px;
 	background:rgba(32, 32, 38, 0.85);
@@ -341,4 +341,56 @@ body
 }
 
 .content
-{}
+{
+	font-size:12px;
+	margin-left: 90px;
+	color:rgb(0,0,0);
+}
+
+#box-left
+{
+	position:relative;
+	width: 50%;
+	height: 100px;
+	left:0;
+	padding-top: 20px;
+	padding-left: 20px;
+	background:rgb(255, 255, 255)
+}
+
+#box-right
+{
+	position:relative;
+	width: 50%;
+	left:50%;
+	padding-left:20px;
+	background:rgb(255, 255, 0)
+}
+/* .content div[id="box"]
+{
+} */
+
+.content-agenda
+{
+
+}
+
+.content-evaluation
+{
+	
+}
+
+.content-graph
+{
+
+}
+
+.content-expertise
+{
+
+}
+
+.content-projects
+{
+
+}
