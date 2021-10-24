@@ -360,7 +360,6 @@ body
 	background: rgb(255, 255, 255);
 	font-size: 12px;
 	padding: 30px;
-	overflow:auto;
 }
 
 .container-box
@@ -429,8 +428,51 @@ body
 	padding-bottom: 5px;
 }
 
+.container-content-overflowable
+{
+	max-height:200px;
+	overflow:auto;
+	padding:5px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
 
 .contents-agenda
+{
+	display:flex;
+	flex-direction:row;
+	min-height: 65px;
+	align-items:center;
+	justify-items: flex-start;
+}
+
+.contents-agenda-date:nth-child(1)
+{
+	background:#39d88f;
+	min-height:65px;
+	width: 80px;
+	flex-shrink: 0;
+	flex-grow:0;
+	align-self:center;
+	color:white;
+}
+
+#agenda-date
+{
+	padding-top:10px;
+	text-align:center;
+	font-weight:300;
+	font-size:28px;
+}
+
+#agenda-month
+{
+	text-align:center;
+	font-size:12px;
+}
+
+.contents-agenda-month
 {
 
 }
