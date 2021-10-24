@@ -32,6 +32,7 @@ body
 	position: relative;
 	top: 50%;
 	left: 50%;
+	z-index: 2;
 	transform: translate(-50%,-50%);
 }
 
@@ -126,10 +127,10 @@ body
 	height: 100%;
 	width : 80px;
 	position: fixed;
+	top:0;
+	padding-top:50px;
 	z-index: 1;
-	top: 60px;
-	left: 0;
-	background-color: rgb(42, 45, 56);
+	background: rgb(42, 45, 56);
 }
 
 .side-bar li
@@ -343,9 +344,9 @@ body
 
 .container
 {
-	display:grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(4, 350px);
+	display:grid;;
+	grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+	grid-template-rows: repeat(4, 315px);
 	margin-top: 20px;
 	margin-left: 20px;
 	margin-right: 20px;
@@ -358,13 +359,66 @@ body
 {
 	background: rgb(255, 255, 255);
 	font-size: 12px;
-	font-weight:bold;
 	padding: 30px;
+	overflow:auto;
 }
 
 .content-agenda
 {
+	display:flex;
+	flex-direction: row;
+	justify-content:flex-end;
+	flex-wrap: wrap;;
+	align-items:center;
+}
 
+.agenda-item:nth-child(1)
+{
+	margin-right:auto;
+	font-weight:bold;
+}
+
+.agenda-item:nth-child(2)
+{
+	color:rgb(77, 206, 207);
+	border-color:rgb(77, 206, 207);
+	border-style:solid;
+	border-width:1px;
+	margin-left:3px;
+	margin-right:3px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:5px;
+	padding-bottom: 5px;
+}
+.agenda-item:nth-child(3)
+{
+	color:rgb(77, 206, 207);
+	border-color:rgb(77, 206, 207);
+	border-style:solid;
+	border-width:1px;
+	border-width:1px;
+	margin-left:3px;
+	margin-right:3px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:5px;
+	padding-bottom: 5px;
+}
+.agenda-item:nth-child(4)
+{
+	margin-right:auto;
+	color:rgb(77, 206, 207);
+	border-color:rgb(77, 206, 207);
+	border-style:solid;
+	border-width:1px;
+	border-width:1px;
+	margin-left:3px;
+	margin-right:3px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:5px;
+	padding-bottom: 5px;
 }
 
 .content-evaluation
