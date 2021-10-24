@@ -1,5 +1,13 @@
 @import "reset.css";
 
+/* icon set */
+
+.material-icons.md-hackerton { color: #39d88f; font-size:14px }
+.material-icons.md-rush { color: #ed8179; font-size:14px }
+.material-icons.md-conference { color: #00babc; font-size:14px }
+
+/* body */
+
 body
 {
 	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -29,7 +37,6 @@ body
 {
 	width: 42.72px;
 	height: 30px;
-	position: relative;
 	top: 50%;
 	left: 50%;
 	z-index: 2;
@@ -437,27 +444,40 @@ body
 	margin-bottom: 10px;
 }
 
-
-.contents-agenda
+.contents-agenda-hack
 {
 	display:flex;
 	flex-direction:row;
 	min-height: 65px;
 	align-items:center;
 	justify-items: flex-start;
+	padding:1px;
+	margin-bottom:5px;
 }
 
-.contents-agenda-date:nth-child(1)
+.contents-agenda-hack-item:nth-child(1)
 {
 	background:#39d88f;
 	min-height:65px;
 	width: 80px;
 	flex-shrink: 0;
 	flex-grow:0;
-	align-self:center;
 	color:white;
+	border:solid;
+	border-width:1px;
+	border-color:#39d88f;
 }
 
+.contents-agenda-hack-item:nth-child(2)
+{
+	width:100%;
+	min-height:65px;
+	border:solid;
+	border-width:1px;
+	border-color:#39d88f;
+}
+
+.contents-agenda-hack-item:nth-child(2):hover{background:#39d88f;}
 #agenda-date
 {
 	padding-top:10px;
@@ -472,9 +492,298 @@ body
 	font-size:12px;
 }
 
-.contents-agenda-month
+.contents-agenda-hack-item
 {
+	display:flex;
+	flex-direction:column;
+	justify-items: center;
+	flex-wrap:wrap;
+}
 
+.contents-agenda-hack-item-box:nth-child(1)
+{
+	float:right;
+	color:#39d88f;
+	margin-left:auto;
+	padding-top:4px;
+	padding-right:6px;
+	font-size:10px;
+	font-weight:350;
+}
+
+.contents-agenda-hack-item-box:nth-child(2)
+{
+	margin-left:10px;
+	margin-right:30px;
+}
+
+.contents-agenda-hack-item-box-title
+{
+	font-size:14px;
+	color:#39d88f;
+	font-weight:600;
+	font-stretch: semi-expanded;
+}
+
+.contents-agenda-hack-item-box:nth-child(3)
+{
+	margin-left:10px;
+	margin-right:30px;
+}
+
+.contents-agenda-hack-item-box-info
+{
+	display:flex;
+	flex-direction: row;
+	align-content:center;
+	text-align:left;
+	padding-top:5px;
+	flex: 1, 1, 1;
+	flex-wrap:wrap;
+	color:#39d88f;
+}
+
+.contents-agenda-hack-item-box-info-child:nth-child(1)
+{
+	margin-right:20px;
+}
+
+.contents-agenda-hack-item-box-info-child:nth-child(2)
+{
+	margin-right:20px;
+}
+
+.contents-agenda-hack-item-box-info-child:nth-child(3)
+{
+	margin-right:20px;
+}
+
+.contents-agenda-rush
+{
+	display:flex;
+	flex-direction:row;
+	min-height: 65px;
+	align-items:center;
+	justify-items: flex-start;
+	padding:1px;
+	margin-bottom:5px;
+}
+
+.contents-agenda-rush-item:nth-child(1)
+{
+	background:#ed8179;
+	min-height:65px;
+	width: 80px;
+	flex-shrink: 0;
+	flex-grow:0;
+	color:white;
+	border:solid;
+	border-width:1px;
+	border-color:#ed8179;
+}
+
+.contents-agenda-rush-item:nth-child(2)
+{
+	width:100%;
+	min-height:65px;
+	border:solid;
+	border-width:1px;
+	border-color:#ed8179;
+}
+
+.contents-agenda-rush-item:nth-child(2):hover{background:#ed8179;}
+#agenda-date
+{
+	padding-top:10px;
+	text-align:center;
+	font-weight:300;
+	font-size:28px;
+}
+
+#agenda-month
+{
+	text-align:center;
+	font-size:12px;
+}
+
+.contents-agenda-rush-item
+{
+	display:flex;
+	flex-direction:column;
+	justify-items: center;
+	flex-wrap:wrap;
+}
+
+.contents-agenda-rush-item-box:nth-child(1)
+{
+	float:right;
+	color:#ed8179;
+	margin-left:auto;
+	padding-top:4px;
+	padding-right:6px;
+	font-size:10px;
+	font-weight:350;
+}
+
+.contents-agenda-rush-item-box:nth-child(2)
+{
+	margin-left:10px;
+	margin-right:30px;
+}
+
+.contents-agenda-rush-item-box-title
+{
+	font-size:14px;
+	color:#ed8179;
+	font-weight:600;
+	font-stretch: semi-expanded;
+}
+
+.contents-agenda-rush-item-box:nth-child(3)
+{
+	margin-left:10px;
+	margin-right:30px;
+}
+
+.contents-agenda-rush-item-box-info
+{
+	display:flex;
+	flex-direction: row;
+	align-content:center;
+	text-align:left;
+	padding-top:5px;
+	flex: 1, 1, 1;
+	flex-wrap:wrap;
+	color:#ed8179;
+}
+
+.contents-agenda-rush-item-box-info-child:nth-child(1)
+{
+	margin-right:20px;
+}
+
+.contents-agenda-rush-item-box-info-child:nth-child(2)
+{
+	margin-right:20px;
+}
+
+.contents-agenda-rush-item-box-info-child:nth-child(3)
+{
+	margin-right:20px;
+}
+
+.contents-agenda-conference
+{
+	display:flex;
+	flex-direction:row;
+	min-height: 65px;
+	align-items:center;
+	justify-items: flex-start;
+	padding:1px;
+	margin-bottom:5px;
+}
+
+.contents-agenda-conference-item:nth-child(1)
+{
+	background:#00babc;
+	min-height:65px;
+	width: 80px;
+	flex-shrink: 0;
+	flex-grow:0;
+	color:white;
+	border:solid;
+	border-width:1px;
+	border-color:#00babc;
+}
+
+.contents-agenda-conference-item:nth-child(2)
+{
+	width:100%;
+	min-height:65px;
+	border:solid;
+	border-width:1px;
+	border-color:#00babc;
+}
+
+.contents-agenda-conference-item:nth-child(2):hover{background:#00babc;}
+#agenda-date
+{
+	padding-top:10px;
+	text-align:center;
+	font-weight:300;
+	font-size:28px;
+}
+
+#agenda-month
+{
+	text-align:center;
+	font-size:12px;
+}
+
+.contents-agenda-conference-item
+{
+	display:flex;
+	flex-direction:column;
+	justify-items: center;
+	flex-wrap:wrap;
+}
+
+.contents-agenda-conference-item-box:nth-child(1)
+{
+	float:right;
+	color:#00babc;
+	margin-left:auto;
+	padding-top:4px;
+	padding-right:6px;
+	font-size:10px;
+	font-weight:350;
+}
+
+.contents-agenda-conference-item-box:nth-child(2)
+{
+	margin-left:10px;
+	margin-right:30px;
+}
+
+.contents-agenda-conference-item-box-title
+{
+	font-size:14px;
+	color:#00babc;
+	font-weight:600;
+	font-stretch: semi-expanded;
+}
+
+.contents-agenda-conference-item-box:nth-child(3)
+{
+	margin-left:10px;
+	margin-right:30px;
+}
+
+.contents-agenda-conference-item-box-info
+{
+	display:flex;
+	flex-direction: row;
+	align-content:center;
+	text-align:left;
+	padding-top:5px;
+	flex: 1, 1, 1;
+	flex-wrap:wrap;
+	color:#00babc;
+}
+
+.contents-agenda-conference-item-box-info-child:nth-child(1)
+{
+	margin-right:20px;
+}
+
+.contents-agenda-conference-item-box-info-child:nth-child(2)
+{
+	margin-right:20px;
+}
+
+.contents-agenda-conference-item-box-info-child:nth-child(3)
+{
+	margin-right:20px;
 }
 
 .content-evaluation
